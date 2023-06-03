@@ -21,13 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php
-$display = "none";
-if (isset($_GET["erro"])) {
-    $erro = $_GET["erro"];
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -43,11 +36,6 @@ if (isset($_GET["erro"])) {
     <div class="container mx-auto bg-light mt-4 w-80" style="max-width: 550px; box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 15px;">
         <main class="col-12 pt-4">
             <h2 id="formulario">Suas informações cadastradas</h2>
-            <?php if (isset($_GET["OK"])) : ?>
-                <div style="color: green;">
-                    <?php echo $_GET["OK"]["message"]; ?>
-                </div>
-            <?php endif; ?>
 
             <!-- Formulário editar conta usuário  -->
             <form method="post" action="deletarUser.php">
@@ -80,14 +68,6 @@ if (isset($_GET["erro"])) {
                     <button type="submit" onclick="validarInputs(event)" class="btn btn-danger">Apagar conta</button>
                 </div>
             </form>
-
-            <?php if (isset($erro)) : ?>
-                <div style="color: red;">
-                    <br>
-                    <?php echo $erro; ?>
-                </div>
-            <?php endif; ?>
-
 
             <!-- Formulário cadastro de contato  -->
             <h2 id="formulario">Cadastrar contatos</h2>
@@ -124,7 +104,7 @@ if (isset($_GET["erro"])) {
             </form>
 
             <div style="padding-bottom: 1rem;">
-                <a href="usuarios.php" class="btn btn-ok">Lista de contatos</a>
+                <a href="contatos.php" class="btn btn-ok">Lista de contatos</a>
             </div>
 
             <footer class="row" style="padding-top: 1rem;">
