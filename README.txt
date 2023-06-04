@@ -8,4 +8,4 @@ A concepção inicial sofreu uma mudança no seu caminho de desenvolvimento, as 
 4º Restrições de acesso aos dados particulares de cada usuário.
 5º Restroções de acesso aos contatos cadastrados por cada usuário.
 
-Para sua implementação, serão utilizadas as seguintes tecnologias: PHP como linguagem principal, Javascript para proporcionar animações mais fluidas ao interagir com os botões, CSS e Bootstrap para estilização visual, e SQL para armazenar os dados de forma persistente.
+Foram utilizadas as seguintes tecnologias:HTML5 para o Front-end das páginas, PHP como linguagem principal(Back-end), Javascript para proporcionar animações mais fluidas ao interagir com os botões, CSS e Bootstrap para estilização visual, e SQL para armazenar os dados de forma persistente.
