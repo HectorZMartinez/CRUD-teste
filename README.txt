@@ -1,4 +1,4 @@
-O software a ser desenvolvido será uma agenda eletrônica.
+# O software desenvolvido é uma agenda eletrônica.
 
 A concepção inicial sofreu uma mudança no seu caminho de desenvolvimento, as mudanças foram:
 
