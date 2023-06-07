@@ -35,6 +35,7 @@ $pdo = null;
 
 <head>
     <title>Lista de Contatos</title>
+    <link rel="stylesheet" type="text/css" href="script/style2.css">
 </head>
 
 <body>
@@ -50,9 +51,9 @@ $pdo = null;
         <tbody>
             <?php foreach ($contatos as $contato) : ?>
                 <tr>
-                    <td><?php echo $contato['nome']; ?></td>
-                    <td><?php echo $contato['numero']; ?></td>
-                    <td><?php echo $contato['endereco']; ?></td>
+                    <td><?php echo $contato["nome"]; ?></td>
+                    <td><?php echo $contato["numero"]; ?></td>
+                    <td><?php echo $contato["endereco"]; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     } else {
         setcookie("usuario", "", time() - 3600);
     }
-    header("Location: select.php");
+    header("Location: cadastroContato.php");
     exit();
 } else {
     header("Location: logar.php?failedlogin=1");

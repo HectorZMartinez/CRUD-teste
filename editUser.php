@@ -28,17 +28,17 @@ if (validarFormulario($senha, $erro)) {
             setcookie("usuario", json_encode($usuario), $hour);
         }
 
-        header("Location: select.php?success=1");
+        header("Location: cadastroContato.php?success=1");
         exit;
     } else {
         $erro["databaseError"] = "Erro ao atualizar a senha no banco de dados.";
         $arr = json_encode($erro);
-        header("Location: select.php?erro=$arr");
+        header("Location: cadastroContato.php?erro=$arr");
         exit;
     }
 } else {
     $arr = json_encode($erro);
-    header("Location: select.php?erro=$arr");
+    header("Location: cadastroContato.php?erro=$arr");
     exit;
 }
 

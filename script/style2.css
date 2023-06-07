@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Adicionando cores personalizadas */
+table {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+    color: #555;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Adicionando ícone */
+td.icon {
+    text-align: center;
+    font-size: 18px;
+}
+
+td.icon i {
+    color: #888;
+}
+
+/* Adicionando animação de hover */
+tbody tr:hover td {
+    transition: background-color 0.3s ease;
+}
+
+/* Adicionando responsividade */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+}

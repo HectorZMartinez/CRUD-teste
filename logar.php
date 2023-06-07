@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["usuario"])) {
-    header("Location: select.php");
+    header("Location: cadastroContato.php");
 }
 $email = "";
 $senha = "";

@@ -34,13 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             // Senha incorreta
             // Redirecionar para a página de edição sem mensagem de erro
-            header("Location: select.php");
+            header("Location: cadastroContato.php");
             exit();
         }
     } else {
         // Erro ao obter os dados do usuário
         // Redirecionar para a página principal sem mensagem de erro
-        header("Location: select.php");
+        header("Location: cadastroContato.php");
         exit();
     }
 }
