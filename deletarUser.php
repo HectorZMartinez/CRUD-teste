@@ -19,18 +19,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $senhaSalva = $row["senha"];
 
         if ($senha === $senhaSalva) {
-            $deleteSql = "DELETE FROM usuario WHERE idusuario = $id";
-            $conn->query($deleteSql);
+            // Iniciar transação
+            $conn->begin_transaction();
 
-            if (isset($_COOKIE["usuario"])) {
-                setcookie("usuario", "", time() - 3600);
+            try {
+                // Excluir os contatos vinculados ao usuário
+                $deleteContatosSql = "DELETE FROM contatos WHERE user_id = $id";
+                $conn->query($deleteContatosSql);
+
+                $deleteSql = "DELETE FROM usuario WHERE idusuario = $id";
+                $conn->query($deleteSql);
+
+                // Commit da transação
+                $conn->commit();
+
+                if (isset($_COOKIE["usuario"])) {
+                    setcookie("usuario", "", time() - 3600);
+                }
+
+                session_destroy();
+
+                // Redirecionar para a página principal
+                header("Location: index.php");
+                exit();
+            } catch (Exception $e) {
+                // Ocorreu um erro, desfazer transação
+                $conn->rollback();
+
+                echo "Erro ao excluir usuário: " . $e->getMessage();
             }
-
-            session_destroy();
-
-            // Redirecionar para a página principal
-            header("Location: index.php");
-            exit();
         } else {
             // Senha incorreta
             // Redirecionar para a página de edição sem mensagem de erro

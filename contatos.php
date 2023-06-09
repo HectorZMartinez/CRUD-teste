@@ -46,6 +46,7 @@ $pdo = null;
                 <th>Nome</th>
                 <th>Número</th>
                 <th>Endereço</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -54,9 +55,16 @@ $pdo = null;
                     <td><?php echo $contato["nome"]; ?></td>
                     <td><?php echo $contato["numero"]; ?></td>
                     <td><?php echo $contato["endereco"]; ?></td>
+                    <td>
+                        <form method="post" action="deletarContato.php">
+                            <input type="hidden" name="idcontato" value="<?php echo $contato['idcontato']; ?>">
+                            <input type="submit" value="Excluir" class="btn-excluir">
+                        </form>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
+
     </table>
 </body>
 
