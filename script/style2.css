@@ -102,3 +102,19 @@ tbody tr:hover td {
     outline: none;
     box-shadow: 0 0 0 3px #ff0000;
 }
+
+.btn-voltar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #45a049;
+}

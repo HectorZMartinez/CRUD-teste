@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <footer class="row" style="padding-top: 1rem;">
                 <div class="col-12">
-                    <p>Copyright © 2022</p>
+                    <p>Copyright © 2023</p>
                 </div>
             </footer>
         </main>

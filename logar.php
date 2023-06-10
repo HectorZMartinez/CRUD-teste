@@ -78,7 +78,7 @@ if (isset($_COOKIE["usuario"])) {
             </form>
             <footer class="row">
                 <div class="col-12">
-                    <p>Copyright © 2022</p>
+                    <p>Copyright © 2023</p>
                 </div>
             </footer>
         </main>

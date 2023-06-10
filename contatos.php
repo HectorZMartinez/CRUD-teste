@@ -40,6 +40,7 @@ $pdo = null;
 
 <body>
     <h2>Lista de Contatos</h2>
+    <a href="cadastroContato.php" class="btn-voltar">Retornar ao formulário de contato</a>
     <table>
         <thead>
             <tr>

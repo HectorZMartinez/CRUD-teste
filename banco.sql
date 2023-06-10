@@ -13,5 +13,5 @@ CREATE TABLE contatos (
     numero VARCHAR(20),
     endereco VARCHAR(255),
     user_id INT,
-    FOREIGN KEY (user_id) REFERENCES usuario (idusuario)
+    FOREIGN KEY (user_id) REFERENCES usuario (idusuario) ON DELETE CASCADE
 );
