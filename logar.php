@@ -63,16 +63,16 @@ if (isset($_COOKIE["usuario"])) {
 
                 <div class="form-group row mx-1">
                     <span class="col-sm-2">&nbsp;</span>
-                    <input type="checkbox" <?php if (isset($_COOKIE["usuario"])) echo "checked" ?> value="1" name="guardandoEm">
+                    <input type="checkbox" data-cy="salvarCookie" <?php if (isset($_COOKIE["usuario"])) echo "checked" ?> value="1" name="guardandoEm">
                     <label for="dados_user" style="margin-left: 5px; margin-bottom: 0;">Salvar dados de acesso</label>
                 </div>
                 <div class="form-group row">
                     <div class="col-12 col-sm-10 mb-4">
                         <div class="button">
-                            <button type="submit" onclick="validarInputs(event)" class="btn btn-primary my-1">Enviar</button>
+                            <button type="submit" onclick="validarInputs(event)" class="btn btn-primary my-1" data-cy="loginOldUser">Enviar</button>
                             <small class="form-text text-muted">*Campos obrigatórios.</small>
                         </div>
-                        <a href="index.php">Cadastrar novo Usuário</a>
+                        <a href="index.php" data-cy="voltarCadastro">Cadastrar novo Usuário</a>
                     </div>
                 </div>
             </form>

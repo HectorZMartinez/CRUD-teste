@@ -64,8 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div style="margin-left: 90px;">
-                    <button type="submit" onclick="validarInputs(event)" formaction="editUser.php" class="btn btn-info" value="LOGAR">Editar</button>
-                    <button type="submit" onclick="validarInputs(event)" class="btn btn-danger">Apagar conta</button>
+                    <button type="submit" onclick="validarInputs(event)" formaction="editUser.php" class="btn btn-info" value="LOGAR" data-cy="editUser">Editar</button>
+                    <button type="submit" onclick="validarInputs(event)" class="btn btn-danger" data-cy="deleteUser">Apagar conta</button>
                 </div>
             </form>
 
@@ -98,13 +98,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div style="margin-left: 90px;">
-                    <button type="submit" onclick="validarInputsNew(event)" class="btn btn-info">Cadastrar</button>
-                    <a class="btn btn-warning" href="deslogar.php">Sair</a>
+                    <button type="submit" onclick="validarInputsNew(event)" class="btn btn-info" data-cy="cadastroContato">Cadastrar</button>
+                    <a class="btn btn-warning" href="deslogar.php" data-cy="deslogarUser">Sair</a>
                 </div>
             </form>
 
             <div style="padding-bottom: 1rem;">
-                <a href="contatos.php" class="btn btn-ok">Lista de contatos</a>
+                <a href="contatos.php" class="btn btn-ok" data-cy="listaContato">Lista de contatos</a>
             </div>
 
             <footer class="row" style="padding-top: 1rem;">

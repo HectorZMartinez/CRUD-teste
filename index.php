@@ -60,7 +60,7 @@ if (isset($_GET["ok"])) {
               não conferem</span>
 
             <div class="button">
-              <button type="submit" onclick="validarInputs(event)" class="btn btn-primary my-1">Enviar</button>
+              <button type="submit" onclick="validarInputs(event)" class="btn btn-primary my-1" data-cy="cadastroNewUser">Enviar</button>
               <small class="form-text text-muted">*Campos obrigatórios.</small>
             </div>
 
@@ -78,7 +78,7 @@ if (isset($_GET["ok"])) {
         <?php } ?>
 
         <div style="padding-bottom: 1rem;">
-          <a href="logar.php" class="btn btn-ok">Já tem cadastro?</a>
+          <a href="logar.php" class="btn btn-ok" data-cy="oldUser">Já tem cadastro?</a>
         </div>
       </form>
     </main>

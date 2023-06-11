@@ -40,7 +40,7 @@ $pdo = null;
 
 <body>
     <h2>Lista de Contatos</h2>
-    <a href="cadastroContato.php" class="btn-voltar">Retornar ao formulário de contato</a>
+    <a href="cadastroContato.php" class="btn-voltar" data-cy="voltarCadastroContato">Retornar ao formulário de contato</a>
     <table>
         <thead>
             <tr>
@@ -59,7 +59,7 @@ $pdo = null;
                     <td>
                         <form method="post" action="deletarContato.php">
                             <input type="hidden" name="idcontato" value="<?php echo $contato['idcontato']; ?>">
-                            <input type="submit" value="Excluir" class="btn-excluir">
+                            <input type="submit" value="Excluir" class="btn-excluir" data-cy="deletContato">
                         </form>
                     </td>
                 </tr>
