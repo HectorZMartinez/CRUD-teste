@@ -42,6 +42,13 @@ Lista de contatos.
 ![4](https://github.com/HectorZMartinez/CRUD-teste/assets/97033401/53f68af1-2ea9-4a78-9437-ec211ad54c39)
 
 
+## Práticas de Código Limpo
+
+![Código Limpo](https://github.com/HectorZMartinez/CRUD-teste/assets/97033401/3e993eeb-9429-4b0a-a3a5-7fb8a6fa0e2b)
+
+O código utiliza o PDO para se conectar ao banco de dados e consultas preparadas para prevenir ataques de injeção de SQL.
+Ele separa responsabilidades ao incluir um arquivo para validar o usuário e utiliza redirecionamentos para lidar com sucesso ou erro no cadastro de contatos.
+
 
 ## Pré-requisitos
 
