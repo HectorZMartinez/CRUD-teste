@@ -3,12 +3,12 @@
 
   ## Índice
 
-- [Sobre](#-sobre)
-- [Pré-requisitos](#-pré-requisitos)
-- [Preparando o Banco de Dados](#-preparando-o-banco-de-dados)
-- [Instalação do Cypress](#-instalação-do-cypress)
-- [Testes Automatizados](#-testes-automatizados)
-- [Contribuição](#-contribuição)
+- [Sobre](#sobre)
+- [Pré-requisitos](#pré-requisitos)
+- [Preparando o Banco de Dados](#preparando-o-banco-de-dados)
+- [Instalação do Cypress](#instalação-do-cypress)
+- [Testes Automatizados](#testes-automatizados)
+- [Contribuição](#contribuição)
 
 
 ## Sobre
